@@ -1,7 +1,7 @@
 # MIR Medical Intelligence (v2.2)
 
 > **Laboratory-First, Adaptive, and Extensible Clinical Intelligence Research Program**  
-> Interdisciplinary Research Collaboration by **Mir AbdulRehman** (Technical / Research Lead) & **Biomedical Research Co-Researcher**
+> Interdisciplinary Research Collaboration by **Mir AbdulRehman** (Technical / Research Lead) & **Sababa Ateeq**
 
 ---
 
@@ -26,7 +26,7 @@ MIR Medical Intelligence (MIR-MI) is an open research platform investigating how
 
 ## 3. Co-Researcher Team & Identity
 - **Mir AbdulRehman** — *Technical / Research Lead* — ORCID: [Pending]
-- **Biomedical Research Co-Researcher** — *Biomedical / Medical Research Co-Researcher* — ORCID: [Pending]
+- **Sababa Ateeq** — *Biomedical / Medical Research Co-Researcher* — ORCID: [Pending]
 
 ---
 
