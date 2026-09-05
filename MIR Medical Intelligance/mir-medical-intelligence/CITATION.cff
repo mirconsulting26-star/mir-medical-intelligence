@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use or reference this research software/proposal, please cite it as below."
+title: "MIR Medical Intelligence: Laboratory-First Clinical Intelligence Research Program"
+version: 2.2.0
+date-released: 2026-09-05
+authors:
+  - family-names: "AbdulRehman"
+    given-names: "Mir"
+    role: "Technical / Research Lead"
+  - family-names: "Biomedical Co-Researcher"
+    given-names: "Co-Researcher"
+    role: "Biomedical / Medical Research Co-Researcher"
+repository-code: "https://github.com/mir-consulting/mir-medical-intelligence"
+abstract: "MIR Medical Intelligence is a research platform investigating laboratory-first physiological anomaly detection, longitudinal trajectory characterization, disease outcome prediction, and adaptive test selection."
