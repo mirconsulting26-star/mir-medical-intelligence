@@ -1,7 +1,7 @@
 # MIR Medical Intelligence
 
 > **Laboratory-First, Adaptive, and Extensible Clinical Intelligence Research Program**  
-> Interdisciplinary Research Collaboration by **Mir AbdulRehman** (Technical / Research Lead) & **Sababa Ateeq**
+> Interdisciplinary Research Collaboration by **Mir AbdulRehman** (Technical / Research Lead) & **Sababa Ateeq** (Biomedical / Medical Research Co-Researcher )
 
 ---
 
