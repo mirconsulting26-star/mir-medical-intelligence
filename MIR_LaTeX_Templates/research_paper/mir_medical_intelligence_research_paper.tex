@@ -1,0 +1,264 @@
+% MIR Medical Intelligence — IEEE-Style Research Paper Template
+% Double-column manuscript skeleton for a specific study.
+% Replace the placeholders and tailor the section structure to the target
+% IEEE journal/conference author instructions before submission.
+
+\documentclass[10pt,journal]{IEEEtran}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{url}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={MIR Medical Intelligence — Research Article},
+    pdfauthor={Mir AbdulRehman and Sababa Ateeq}
+}
+
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+
+% ---------- Paper metadata ----------
+\newcommand{\PaperTitle}{Insert Study-Specific Title Here}
+\newcommand{\MirName}{Mir AbdulRehman}
+\newcommand{\SababaName}{Sababa Ateeq}
+\newcommand{\MirRole}{Co-Research Lead --- AI/ML \& Software Engineering}
+\newcommand{\SababaRole}{Co-Research Lead --- Biomedical \& Medical AI}
+\newcommand{\MirORCID}{0000-0000-0000-0000}% Replace
+\newcommand{\SababaORCID}{0000-0000-0000-0000}% Replace
+\newcommand{\AffiliationOne}{MIR Medical Intelligence / Independent Research Program}
+\newcommand{\AffiliationTwo}{Department or Institution, City, Country}% Replace where applicable
+\newcommand{\CorrespondingEmail}{research@example.org}% Replace
+\newcommand{\StudyKeywords}{medical AI, laboratory medicine, machine learning, clinical prediction, uncertainty, explainable AI}
+
+\title{\PaperTitle}
+
+\author{\MirName, \MirRole, ORCID: \href{https://orcid.org/\MirORCID}{\MirORCID},\\
+\SababaName, \SababaRole, ORCID: \href{https://orcid.org/\SababaORCID}{\SababaORCID}\\
+\AffiliationOne\\
+\AffiliationTwo\\
+Corresponding author: \href{mailto:\CorrespondingEmail}{\CorrespondingEmail}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% Structured or narrative abstract as required by the target publication.
+% State: Background/Objectives; Methods; Results; Conclusions; and, where useful,
+% dataset, population, key metric, and principal scientific contribution.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\StudyKeywords
+\end{IEEEkeywords}
+
+\section{Introduction}
+\subsection{Clinical/scientific background}
+\subsection{Problem statement}
+\subsection{Existing evidence}
+\subsection{Research gap}
+\subsection{Study objective}
+\subsection{Hypothesis}
+\subsection{Contributions}
+% End the introduction with a concise statement of what this paper contributes.
+
+\section{Related Work}
+\subsection{Clinical prediction and medical AI}
+\subsection{Laboratory-based modeling}
+\subsection{Missing-data and missingness-aware methods}
+\subsection{Uncertainty and calibration}
+\subsection{Explainability}
+\subsection{Adaptive evidence acquisition}
+\subsection{Position of the present study}
+
+\section{Materials and Methods}
+\subsection{Study design}
+\subsection{Research setting and data sources}
+\subsection{Dataset description}
+\subsection{Ethics and data governance}
+\subsection{Population and cohort construction}
+\subsection{Inclusion and exclusion criteria}
+\subsection{Index date and observation window}
+\subsection{Outcome definition}
+\subsection{Predictor variables}
+\subsection{Laboratory representation}
+\subsection{Reference ranges and units}
+\subsection{Temporal feature construction}
+\subsection{Missingness representation}
+\subsection{Data preprocessing}
+\subsection{Data leakage prevention}
+\subsection{Train/validation/test strategy}
+\subsection{External validation}
+
+\section{Model Development}
+\subsection{Reference/rule-based baseline}
+\subsection{Statistical baselines}
+\subsection{Machine learning models}
+\subsection{Deep learning models}
+\subsection{Ensemble models}
+\subsection{Hyperparameter optimization}
+\subsection{Class imbalance handling}
+\subsection{Calibration methods}
+\subsection{Uncertainty quantification}
+\subsection{Ablation studies}
+
+\section{Adaptive Evidence Acquisition Methodology}
+% Remove this whole section for papers that do not study adaptive testing.
+\subsection{Problem formulation}
+\subsection{Candidate evidence set}
+\subsection{Evidence-value metric}
+\subsection{Sequential decision policy}
+\subsection{Stopping criterion}
+\subsection{Clinician-in-the-loop constraint}
+\subsection{Evaluation design}
+
+\section{Evaluation and Statistical Analysis}
+\subsection{Primary endpoint}
+\subsection{Secondary endpoints}
+\subsection{Discrimination metrics}
+\subsection{Calibration metrics}
+\subsection{Clinical utility}
+\subsection{Survival metrics}
+\subsection{Anomaly-detection metrics}
+\subsection{Uncertainty metrics}
+\subsection{Subgroup analysis}
+\subsection{Sensitivity analyses}
+\subsection{Statistical tests and confidence intervals}
+\subsection{Model comparison procedure}
+\subsection{Multiplicity and statistical safeguards}
+
+\section{Explainability and Clinical Communication}
+\subsection{Global feature importance}
+\subsection{Local explanations}
+\subsection{Attribution methods}
+\subsection{Evidence coverage}
+\subsection{Uncertainty communication}
+\subsection{Inconclusive and abstention behavior}
+\subsection{Clinical-language policy}
+
+\section{Results}
+\subsection{Cohort characteristics}
+\subsection{Data completeness and missingness}
+\subsection{Primary performance results}
+\subsection{Calibration results}
+\subsection{Clinical utility results}
+\subsection{Subgroup results}
+\subsection{External-validation results}
+\subsection{Ablation results}
+\subsection{Uncertainty results}
+\subsection{Adaptive evidence-acquisition results}
+
+\begin{table*}[t]
+\centering
+\caption{Primary model performance. Replace placeholder values with estimates and confidence intervals.}
+\label{tab:main-results}
+\begin{tabular}{lcccccc}
+\toprule
+Model & AUROC & AUPRC & Sensitivity & Specificity & Brier & Calibration slope \\
+\midrule
+Baseline & -- & -- & -- & -- & -- & -- \\
+Logistic/Elastic Net & -- & -- & -- & -- & -- & -- \\
+Tree model & -- & -- & -- & -- & -- & -- \\
+Deep model & -- & -- & -- & -- & -- & -- \\
+Proposed model & -- & -- & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{figure}[t]
+    \centering
+    \fbox{\rule{0pt}{1.7in}\rule{0.95\columnwidth}{0pt}}
+    \caption{Placeholder for the principal model/analysis figure.}
+    \label{fig:main}
+\end{figure}
+
+\section{Discussion}
+\subsection{Principal findings}
+\subsection{Comparison with prior work}
+\subsection{Scientific interpretation}
+\subsection{Clinical interpretation}
+\subsection{Why the method succeeds or fails}
+\subsection{Implications for missingness-aware intelligence}
+\subsection{Implications for uncertainty-aware decision support}
+\subsection{Implications for future adaptive evidence acquisition}
+
+\section{Limitations}
+\subsection{Dataset limitations}
+\subsection{Selection and indication bias}
+\subsection{Missingness limitations}
+\subsection{Generalizability}
+\subsection{Measurement and reference-range limitations}
+\subsection{Causal-inference limitations}
+\subsection{Clinical-deployment limitations}
+\subsection{Residual model risk}
+
+\section{Clinical Safety, Ethics, and Regulatory Considerations}
+\subsection{Research-use boundary}
+\subsection{Human oversight}
+\subsection{Risk management}
+\subsection{Data protection and privacy}
+\subsection{Regulatory considerations}
+\subsection{Potential failure modes}
+\subsection{Safe-use recommendations}
+
+\section{Reproducibility and Research Transparency}
+\subsection{Code availability}
+\subsection{Data availability}
+\subsection{Dataset access restrictions}
+\subsection{Software and environment}
+\subsection{Versioning and archival release}
+\subsection{Experiment registry}
+\subsection{Model card / supplementary material}
+
+\section{Conclusion}
+% State the principal finding, scientific contribution, limits, and next research step.
+
+\section*{Funding}
+% State funding or: "This research received no external funding."
+
+\section*{Conflicts of Interest}
+% Declare conflicts or state none.
+
+\section*{Ethics Statement}
+% State ethics review / exemption / dataset governance as applicable.
+
+\section*{Author Contributions}
+\textbf{Mir AbdulRehman:} Conceptualization; Methodology; Software; Data Curation; Formal Analysis; Investigation; Validation; Visualization; Writing---Original Draft; Writing---Review \& Editing.\\
+\textbf{Sababa Ateeq:} Conceptualization; Methodology; Biomedical Interpretation; Investigation; Validation; Writing---Original Draft; Writing---Review \& Editing.\\
+% Replace with the actual contribution record for this paper. Use the CRediT taxonomy where appropriate.
+
+\section*{Acknowledgment}
+% Acknowledge contributors who do not meet the applicable authorship criteria.
+
+\bibliographystyle{IEEEtran}
+\bibliography{../shared/mir_references}
+
+\appendices
+\section{Supplementary Methods}
+% Optional.
+\subsection{Preprocessing details}
+\subsection{Hyperparameter search}
+\subsection{Additional ablations}
+
+\section{Additional Results}
+% Optional.
+
+\end{document}

@@ -1,0 +1,535 @@
+% MIR Medical Intelligence — IEEE-Style Research Proposal Template
+% Single-column research-program proposal.
+% IMPORTANT: IEEEtran's onecolumn mode is intended for draft/proposal-style documents,
+% not as the final layout of an IEEE published article. Confirm the target venue's
+% specific author template before submission.
+
+\documentclass[11pt,journal,onecolumn,draftclsnofoot]{IEEEtran}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{url}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={MIR Medical Intelligence — Research Proposal},
+    pdfauthor={Mir AbdulRehman and Sababa Ateeq}
+}
+
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+
+% ---------- Project metadata ----------
+\newcommand{\ProjectName}{MIR Medical Intelligence}
+\newcommand{\ProjectVersion}{v1.0}
+\newcommand{\ProjectDate}{September 2026}
+\newcommand{\MirName}{Mir AbdulRehman}
+\newcommand{\SababaName}{Sababa Ateeq}
+\newcommand{\MirRole}{Co-Research Lead --- AI/ML \& Software Engineering}
+\newcommand{\SababaRole}{Co-Research Lead --- Biomedical \& Medical AI}
+\newcommand{\MirORCID}{0000-0000-0000-0000}% Replace
+\newcommand{\SababaORCID}{0000-0000-0000-0000}% Replace
+\newcommand{\ResearchAffiliation}{Independent Research Program / MIR Medical Intelligence}
+\newcommand{\ResearchEmail}{research@example.org}% Replace
+
+\title{\ProjectName: Research Proposal and Integrated Research Roadmap}
+
+\author{\MirName, \MirRole, ORCID: \href{https://orcid.org/\MirORCID}{\MirORCID}\\
+\SababaName, \SababaRole, ORCID: \href{https://orcid.org/\SababaORCID}{\SababaORCID}\\
+\ResearchAffiliation\\
+Corresponding contact: \href{mailto:\ResearchEmail}{\ResearchEmail}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document provides the scientific and technical research proposal for \ProjectName. The program investigates a missingness-aware, uncertainty-aware clinical intelligence framework that reasons over available laboratory and clinical evidence, communicates evidence coverage and uncertainty, identifies information gaps, and investigates whether additional evidence can be selected when it is expected to improve a clinical assessment. The initial research scope is restricted to non-imaging laboratory and structured clinical data, with later expansion toward multimodal medical intelligence. This proposal defines the research questions, hypotheses, datasets, methodology, model-development program, evaluation strategy, explainability and uncertainty framework, adaptive evidence-acquisition research track, federated learning and agentic-AI extensions, governance, safety, reproducibility, publication strategy, work packages, and multi-year roadmap.
+\end{abstract}
+
+\begin{IEEEkeywords}
+medical artificial intelligence, clinical decision support, machine learning, deep learning, laboratory medicine, missing data, uncertainty quantification, explainable AI, adaptive evidence acquisition, federated learning, agentic AI, clinical intelligence
+\end{IEEEkeywords}
+
+\section*{Document Control}
+\begin{table}[H]
+\centering
+\caption{Proposal metadata.}
+\label{tab:proposal-metadata}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}lX@{}}
+Version & \ProjectVersion \\
+Date & \ProjectDate \\
+Project & \ProjectName \\
+Research leads & \MirName; \SababaName \\
+Document type & Research proposal and integrated research roadmap \\
+Status & Working research document; update version on substantive changes \\
+\end{tabularx}
+\end{table}
+
+\section{Executive Summary}
+\subsection{Program objective}
+% State the overall scientific objective in one precise paragraph.
+\subsection{Primary deliverables}
+% List the expected scientific, software, data, model, and publication outputs.
+\subsection{Expected contribution}
+% Explain what the research could contribute beyond existing methods.
+\subsection{Current research position}
+% State clearly what is established, proposed, preliminary, or not yet validated.
+
+\section{Research Team, Leadership, Authorship, and Provenance}
+\subsection{Research team and roles}
+\subsection{Research leadership model}
+\subsection{Research identity and persistent identifiers}
+\subsection{Authorship and contributor policy}
+\subsection{CRediT contribution tracking}
+\subsection{Research provenance and project origin}
+\subsection{External collaborators, supervisors, and institutional partners}
+\subsection{AI-assisted research and disclosure policy}
+
+\section{Background and Research Context}
+\subsection{Clinical and scientific context}
+\subsection{Problem domain}
+\subsection{Current approaches and their limitations}
+\subsection{Motivation for an evidence-aware framework}
+\subsection{Preliminary rationale}
+
+\section{Problem Statement}
+\subsection{Primary problem}
+\subsection{Clinical and methodological gap}
+\subsection{Operational constraints}
+\subsection{Research assumptions}
+\subsection{Out-of-scope claims and boundaries}
+
+\section{Research Gap and Novelty}
+\subsection{Existing research landscape}
+\subsection{Unmet methodological needs}
+\subsection{Novel aspects of the proposed program}
+\subsection{Expected scientific contribution}
+\subsection{Distinction from clinical deployment}
+
+\section{Research Aim, Objectives, and Expected Outcomes}
+\subsection{Overall aim}
+\subsection{Primary objectives}
+\subsection{Secondary objectives}
+\subsection{Expected scientific outcomes}
+\subsection{Expected engineering outcomes}
+\subsection{Expected publication outcomes}
+
+\section{Research Questions and Hypotheses}
+\subsection{Clinical questions}
+\subsection{Primary methodological questions}
+\subsection{Secondary research questions}
+\subsection{Primary hypothesis}
+\subsection{Counter-hypothesis}
+\subsection{Exploratory hypotheses}
+
+\section{Scope, Boundaries, and Research Tracks}
+\subsection{Initial laboratory-only scope}
+\subsection{Structured clinical-data scope}
+\subsection{Future multimodal scope}
+\subsection{Research tracks}
+\begin{itemize}
+    \item Laboratory standardization and anomaly intelligence.
+    \item Supervised clinical-risk prediction.
+    \item Longitudinal temporal modeling.
+    \item Missingness-aware inference.
+    \item Adaptive evidence acquisition.
+    \item Explainability and uncertainty quantification.
+    \item Federated learning.
+    \item Safe agentic clinical intelligence.
+    \item Future multimodal medical intelligence.
+\end{itemize}
+
+\section{Scientific Premise and System Operating Principle}
+\subsection{Evidence-in-hand first}
+\subsection{Partial observability as a design requirement}
+\subsection{Inference, uncertainty, and evidence coverage}
+\subsection{Inconclusive outputs and abstention}
+\subsection{No fabrication of unavailable observations}
+\subsection{Prediction is not diagnosis}
+
+\section{Dataset Strategy and Acquisition Roadmap}
+\subsection{Dataset portfolio}
+\subsection{Dataset inclusion criteria}
+\subsection{Recommended acquisition order}
+\subsection{Synthetic and open data}
+\subsection{Credentialed clinical data}
+\subsection{Longitudinal EHR research}
+\subsection{Future imaging resources}
+\subsection{Dataset provenance records}
+\subsection{Data access, licenses, and use restrictions}
+
+\section{Study Design and Cohort Construction}
+\subsection{Study design progression}
+\subsection{Population definition}
+\subsection{Index date and observation windows}
+\subsection{Inclusion and exclusion criteria}
+\subsection{Outcome definitions}
+\subsection{Cohort construction}
+\subsection{Temporal splitting}
+\subsection{External validation design}
+\subsection{Ascertainment and indication bias}
+\subsection{Causal interpretation limits}
+
+\section{Data Standardization and Clinical Data Model}
+\subsection{Canonical internal schema}
+\subsection{Laboratory ontology}
+\subsection{Laboratory families}
+\subsection{Units and reference ranges}
+\subsection{Specimen and measurement metadata}
+\subsection{Time and provenance representation}
+\subsection{Metadata-driven onboarding}
+\subsection{Data quality controls}
+
+\section{Missingness-Aware Data Methodology}
+\subsection{Missing data taxonomy}
+\subsection{Missing is not normal}
+\subsection{Observation masks and status variables}
+\subsection{Time-since-measurement}
+\subsection{Imputation and observed-value separation}
+\subsection{Missing-not-at-random considerations}
+\subsection{Sensitivity analyses}
+
+\section{Machine Learning, Deep Learning, and Statistical Model Program}
+\subsection{Reference and rule-based baselines}
+\subsection{Classical statistical models}
+\subsection{Tree-based machine learning}
+\subsection{Kernel methods}
+\subsection{Neural and sequence models}
+\subsection{Survival analysis}
+\subsection{Anomaly detection}
+\subsection{Ensembles and stacking}
+\subsection{Calibration and conformal methods}
+\subsection{Development sequence}
+\subsection{Multi-task learning}
+
+\section{Experimental Methodology}
+\subsection{Train, validation, and test protocol}
+\subsection{Leakage prevention}
+\subsection{Hyperparameter selection}
+\subsection{Repeated and nested validation}
+\subsection{Random seeds and reproducibility}
+\subsection{Ablation studies}
+\subsection{Baseline comparisons}
+\subsection{External validation}
+\subsection{Temporal and site validation}
+
+\section{Model Evaluation and Statistical Analysis Plan}
+\subsection{Primary performance metrics}
+\subsection{Discrimination}
+\subsection{Calibration}
+\subsection{Clinical utility}
+\subsection{Survival metrics}
+\subsection{Anomaly-detection metrics}
+\subsection{Uncertainty intervals}
+\subsection{Subgroup analysis}
+\subsection{Model comparison}
+\subsection{Multiplicity and statistical safeguards}
+\subsection{Sensitivity analyses}
+
+\section{Explainability, Uncertainty, and Clinical Communication}
+\subsection{Global explanations}
+\subsection{Local explanations}
+\subsection{Feature attribution methods}
+\subsection{Uncertainty quantification}
+\subsection{Confidence versus predictive uncertainty}
+\subsection{Evidence coverage indicators}
+\subsection{Clinical-language policy}
+\subsection{Safe presentation of inconclusive results}
+
+\section{Adaptive Evidence Acquisition Research Track}
+\subsection{Central research question}
+\subsection{Sequential decision formulation}
+\subsection{Information gain and expected value of information}
+\subsection{Candidate next-test selection}
+\subsection{Stopping rules}
+\subsection{Clinician-in-the-loop constraint}
+\subsection{Evaluation without autonomous ordering}
+\subsection{Test-use and resource proxies}
+\subsection{Experimental comparison of acquisition policies}
+
+\section{Longitudinal Clinical Intelligence}
+\subsection{Temporal feature construction}
+\subsection{Trend and trajectory representation}
+\subsection{Recency weighting}
+\subsection{Sequence modeling}
+\subsection{Event-history considerations}
+\subsection{Repeated-measure validation}
+
+\section{Federated Learning Research Track}
+\subsection{Scientific motivation}
+\subsection{Synthetic clients}
+\subsection{Federated baselines}
+\subsection{Non-IID data}
+\subsection{Personalization}
+\subsection{Privacy and security considerations}
+\subsection{Federated evaluation metrics}
+\subsection{Phase-in strategy}
+\subsection{Tooling}
+\subsection{Limitations}
+
+\section{Agentic AI Research Track}
+\subsection{Role of agents}
+\subsection{Agent boundaries}
+\subsection{Proposed agent architecture}
+\subsection{Research and evidence agent}
+\subsection{Data-quality agent}
+\subsection{Analysis-router agent}
+\subsection{Uncertainty and evidence-gap agent}
+\subsection{Verification and audit agent}
+\subsection{Report-generation agent}
+\subsection{Agentic experiments}
+\subsection{Safety constraints}
+
+\section{End-to-End Technical Architecture}
+\subsection{System architecture}
+\subsection{Data ingestion layer}
+\subsection{Canonical patient state}
+\subsection{Model layer}
+\subsection{Decision and evidence layer}
+\subsection{Explainability and uncertainty layer}
+\subsection{Agent orchestration layer}
+\subsection{Clinical interface layer}
+\subsection{Audit and observability layer}
+
+\begin{figure}[H]
+    \centering
+    \fbox{\rule{0pt}{2.0in}\rule{0.95\linewidth}{0pt}}
+    \caption{Placeholder for the MIR Medical Intelligence end-to-end architecture.}
+    \label{fig:architecture}
+\end{figure}
+
+\section{Software Architecture and Research Infrastructure}
+\subsection{Repository structure}
+\subsection{Python environment}
+\subsection{R companion environment}
+\subsection{Experiment tracking}
+\subsection{Configuration management}
+\subsection{Continuous integration and testing}
+\subsection{Artifact versioning}
+\subsection{Model registry}
+
+\section{Research Work Packages}
+\subsection{WP0 --- Governance and provenance}
+\subsection{WP1 --- Laboratory data foundation}
+\subsection{WP2 --- Anomaly intelligence}
+\subsection{WP3 --- Supervised risk prediction}
+\subsection{WP4 --- Longitudinal modeling}
+\subsection{WP5 --- Missingness-aware inference}
+\subsection{WP6 --- Uncertainty and calibration}
+\subsection{WP7 --- Adaptive evidence acquisition}
+\subsection{WP8 --- External validation}
+\subsection{WP9 --- Federated learning}
+\subsection{WP10 --- Agentic intelligence}
+\subsection{WP11 --- Clinical interface and safety case}
+\subsection{WP12 --- Publication and dissemination}
+\subsection{WP13 --- Multimodal expansion research}
+
+\section{First 90 Days --- Concrete Execution Plan}
+\subsection{Days 1--15: scientific and data foundation}
+\subsection{Days 16--30: laboratory representation}
+\subsection{Days 31--60: anomaly research}
+\subsection{Days 61--90: supervised baseline}
+
+\section{24-Month and 36-Month Integrated Research Roadmap}
+\subsection{Phase 1 --- Foundation}
+\subsection{Phase 2 --- Baseline intelligence}
+\subsection{Phase 3 --- Longitudinal and uncertainty-aware research}
+\subsection{Phase 4 --- Adaptive evidence acquisition}
+\subsection{Phase 5 --- Federated learning}
+\subsection{Phase 6 --- Agentic clinical intelligence}
+\subsection{Phase 7 --- Multimodal expansion}
+
+\begin{table}[H]
+\centering
+\caption{High-level research roadmap.}
+\label{tab:roadmap}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.18\textwidth}p{0.22\textwidth}X@{}}
+Phase & Focus & Core outputs \\
+I & Foundation & Governance, protocol, data model, repository, literature base \\
+II & Baseline intelligence & Anomaly models, supervised models, evaluation package \\
+III & Temporal/uncertainty & Longitudinal models, calibration, missingness-aware inference \\
+IV & Adaptive evidence & Sequential evidence-selection experiments, stopping policies \\
+V & Federated learning & Synthetic federation, non-IID experiments, privacy-aware evaluation \\
+VI & Agentic layer & Bounded agents, verification, auditability \\
+VII & Multimodal & Imaging and other modalities as separate validated tracks \\
+\end{tabularx}
+\end{table}
+
+\section{Research Decision Gates}
+\subsection{Gate 1 --- Data readiness}
+\subsection{Gate 2 --- Baseline reproducibility}
+\subsection{Gate 3 --- External validity}
+\subsection{Gate 4 --- Uncertainty reliability}
+\subsection{Gate 5 --- Adaptive-evidence feasibility}
+\subsection{Gate 6 --- Federated feasibility}
+\subsection{Gate 7 --- Agentic safety readiness}
+\subsection{Gate 8 --- Multimodal expansion readiness}
+
+\section{Research Governance, Ethics, Privacy, Safety, and Regulation}
+\subsection{Human-subject and data-governance principles}
+\subsection{Data minimization and access controls}
+\subsection{Anonymization and pseudonymization considerations}
+\subsection{GDPR and applicable data-protection requirements}
+\subsection{Medical-device and software implications}
+\subsection{EU AI Act considerations}
+\subsection{Risk management and ISO 14971 alignment}
+\subsection{Clinical safety case}
+\subsection{Hazard identification}
+\subsection{Human oversight}
+\subsection{No autonomous diagnosis or treatment policy}
+
+\section{Reproducibility and Open-Science Plan}
+\subsection{Repository structure}
+\subsection{Dataset cards}
+\subsection{Model cards}
+\subsection{Research logs}
+\subsection{Experiment registry}
+\subsection{Version control}
+\subsection{Archival releases and DOI strategy}
+\subsection{Code and data-sharing boundaries}
+\subsection{Reproducible environment}
+
+\section{Research Paper and Publication Strategy}
+\subsection{Proposed manuscript series}
+\subsection{Target publication types}
+\subsection{Reporting frameworks}
+\subsection{Preprint strategy}
+\subsection{Journal-selection criteria}
+\subsection{Author-order policy}
+\subsection{Author-contribution statements}
+\subsection{Supplementary materials}
+\subsection{Data and code availability statements}
+
+\section{Clinician Interface and Human Factors}
+\subsection{Core views}
+\subsection{Evidence coverage display}
+\subsection{Uncertainty display}
+\subsection{Explanation display}
+\subsection{Evidence-gap recommendations}
+\subsection{Human oversight and escalation}
+\subsection{Usability evaluation plan}
+
+\section{Research Risks and Mitigation Register}
+\begin{table}[H]
+\centering
+\caption{Example research risk register.}
+\label{tab:risk-register}
+\begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}p{0.18\textwidth}p{0.18\textwidth}X@{}}
+Risk & Likelihood & Impact & Mitigation \\
+Dataset shift & Medium & High & External validation, temporal testing, subgroup analysis \\
+Leakage & Medium & High & Patient-level splitting, feature provenance, pipeline audits \\
+Missingness bias & High & High & Explicit missingness states, sensitivity analysis \\
+Overclaiming & Low/Medium & High & Clinical-language policy, abstention, safety review \\
+Agent hallucination & Medium & High & Grounding, verification, hard boundaries, audit logs \\
+\end{tabularx}
+\end{table}
+
+\section{Success Criteria}
+\subsection{Scientific success}
+\subsection{Statistical success}
+\subsection{Engineering success}
+\subsection{Clinical-safety success}
+\subsection{Reproducibility success}
+\subsection{Publication success}
+
+\section{Resources, Infrastructure, and Budget Assumptions}
+\subsection{Compute}
+\subsection{Software}
+\subsection{Storage}
+\subsection{Human expertise}
+\subsection{External services}
+\subsection{Expected costs and free-resource strategy}
+
+\section{Immediate Acquisition and Setup Checklist}
+\begin{itemize}
+    \item Persistent researcher identifiers (ORCID).
+    \item Research repository and version control.
+    \item Open research project workspace.
+    \item Shared reference-management library.
+    \item Governance and contribution files.
+    \item Dataset access and provenance records.
+    \item Study protocol.
+    \item Experiment registry.
+\end{itemize}
+
+\section{Expected Publications and Research Outputs}
+\begin{enumerate}
+    \item Protocol or framework paper.
+    \item Laboratory anomaly and standardization study.
+    \item Longitudinal laboratory prediction study.
+    \item Missingness-aware and uncertainty-aware inference study.
+    \item Adaptive evidence-acquisition study.
+    \item Federated-learning study.
+    \item Safe agentic clinical-intelligence study.
+    \item Future multimodal study.
+\end{enumerate}
+
+\section{References and Source Registry}
+% Use references.bib for the evidence base. Add source notes and access dates
+% for datasets, standards, regulatory documents, and software.
+\bibliographystyle{IEEEtran}
+\bibliography{../shared/mir_references}
+
+\appendices
+\section{Example Research Log Template}
+\begin{table}[H]
+\centering
+\caption{Minimal experiment log fields.}
+\label{tab:research-log}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.28\textwidth}X@{}}
+Date & \\
+Researcher & \\
+Experiment ID & \\
+Research question & \\
+Dataset/version & \\
+Code commit & \\
+Configuration & \\
+Result summary & \\
+Limitations/issues & \\
+Next action & \\
+\end{tabularx}
+\end{table}
+
+\section{Minimum Model Card Template}
+\begin{itemize}
+    \item Model name and version.
+    \item Intended use.
+    \item Out-of-scope use.
+    \item Training data.
+    \item Evaluation data.
+    \item Input variables and missingness behavior.
+    \item Performance and calibration.
+    \item Subgroup performance.
+    \item Known limitations.
+    \item Safety considerations.
+    \item Version and release information.
+\end{itemize}
+
+\section{Research Position Statement}
+The project is a staged research program. Claims should increase only as evidence, validation, and reproducibility increase. Early outputs should be treated as research findings rather than clinical deployment claims.
+
+\end{document}
