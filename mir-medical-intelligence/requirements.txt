@@ -1,0 +1,41 @@
+# Foundational Data Science & Numerical Computing
+pandas
+numpy
+scipy
+pyarrow
+
+# File Formats & Medical Survey Data Readers (SAS XPT, SPSS, Stata, Excel)
+pyreadstat
+xport
+openpyxl
+xlsxwriter
+
+# Data Visualization & Exploratory Analysis
+matplotlib
+seaborn
+plotly
+missingno
+# Note: ydata-profiling is currently incompatible with Python >=3.14 (requires Python <3.14)
+
+# Interactive Development & Jupyter Notebooks
+jupyter
+notebook
+jupyterlab
+ipykernel
+ipywidgets
+
+# Statistical Modeling & Survey Analysis
+statsmodels
+lifelines
+
+# Machine Learning & Explainability
+scikit-learn
+xgboost
+lightgbm
+catboost
+shap
+
+# Clinical & Medical Intelligence Helpers
+pydantic
+biopython
+pydicom
